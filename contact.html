@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Nuno Nazaré</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/icons8-home.svg" alt="Home">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>
+            If you’d like to collaborate, discuss a project, or just say hi, feel free to reach out:
+        </p>
+        <div class="contact-info">
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:nunonazare13@outlook.pt">nunonazare13@outlook.pt</a>
+            </p>
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/NNazare" target="_blank">
+                    github.com/NNazare
+                </a>
+            </p>
+        </div>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn primary">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,348 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f0f;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  height: 60px;          /* lock navbar height */
+  display: flex;
+  align-items: center;   /* centers items vertically */
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navbar .logo img {
+  height: 40px;   /* increase just the icon size */
+  width: auto;    /* keep proportions */
+  filter: invert(1);
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #00aaff;
+}
+
+/* Socials */
+.socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.socials a {
+  font-size: 2rem;  /* aumenta tamanho dos ícones */
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #00aaff;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 50px;
+    gap: 50px;
+}
+
+.hero .profile-img img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid #222;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text .highlight {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #00aaff;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background: #00aaff;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background: #008ecc;
+}
+
+.btn.secondary {
+    border: 2px solid #00aaff;
+    color: #00aaff;
+}
+
+.btn.secondary:hover {
+    background: #00aaff;
+    color: #fff;
+}
+
+/* Socials */
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: #00aaff;
+}
+
+/* Projects */
+.projects {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.projects h2 {
+    color: #00aaff;
+    margin-bottom: 40px;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #181818;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #00aaff;
+    margin-bottom: 15px;
+}
+
+.card-buttons {
+    margin-top: 15px;
+}
+
+/* CONTACT - layout geral mais premium */
+.contact {
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    min-height: 80vh;
+    text-align: center;
+}
+
+/* título */
+.contact h2 {
+    color: #00aaff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+/* texto introdutório */
+.contact p {
+    max-width: 650px;
+    color: #cfcfcf;
+}
+
+/* caixa de contactos */
+.contact-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* cada linha de info com estilo card */
+.contact-info p {
+    background: #181818;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    min-width: 320px;
+    transition: 0.3s;
+}
+
+/* hover subtil nos contactos */
+.contact-info p:hover {
+    transform: translateY(-2px);
+    border-color: #00aaff;
+}
+
+/* links */
+.contact-info a {
+    color: #00aaff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* FORM mais moderno */
+form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* inputs */
+form input,
+form textarea {
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    background: #181818;
+    color: #ddd;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* focus bonito */
+form input:focus,
+form textarea:focus {
+    border-color: #00aaff;
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.25);
+}
+
+/* textarea */
+form textarea {
+    height: 140px;
+    resize: none;
+}
+
+/* botão (usa o teu btn primary) */
+form button {
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ACTIVE link navbar */
+.nav-links a.active {
+    color: #00aaff;
+    font-weight: bold;
+    border-bottom: 2px solid #00aaff;
+}
+
+
+.typing {
+  color: #00aaff;
+  font-weight: bold;
+  border-right: 2px solid #00aaff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* About Page */
+.about {
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Título */
+.about h2 {
+    color: #00aaff;
+    font-size: 2rem;
+}
+
+/* Layout principal (imagem + texto lado a lado) */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Imagem */
+.about-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px; /* podes trocar para 50% se quiseres círculo */
+    border: 4px solid #222;
+    object-fit: cover;
+}
+
+/* Texto */
+.about-text {
+    max-width: 700px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+/* Mobile responsivo simples */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 160px;
+        height: 160px;
+    }
+}
